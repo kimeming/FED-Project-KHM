@@ -1,0 +1,72 @@
+@charset "utf-8";
+.wrapper {padding-bottom: var(--footer-height);}
+/** header s **/
+/* header top marquee s */
+.marquee {position: relative; z-index: 11; width: 100vw; height: 45px; max-width: 100%; overflow: hidden; background-color: var(--yellow);}
+.marquee .track {height: 100%; white-space: nowrap; will-change: transform; animation: marquee 15s linear infinite;}
+.marquee .marquee-content {color: var(--green); line-height: 1; font-size: 1.6rem; font-weight: 900; padding: 5px; position: relative; top: 3px;}
+
+.scrolling-wrap {position: fixed; z-index: 10; width: 100%; background: #fff; text-transform: uppercase; font-size: 45px; padding: 9px 0; overflow: hidden; border-bottom: 2px solid #222; border-top: 1px solid #111;}
+.scrolling-text {-webkit-font-smoothing: antialiased; width: fit-content; display: flex; flex: auto; flex-direction: row;}
+.scrolling-text .text {flex-shrink: 0; padding: 0 4px; font-weight: bold; background: linear-gradient(90deg, rgba(36,131,199,1) 0%, rgba(169,0,129,1) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+
+@media screen and (min-width: 1024px){
+    .marquee {height: 55px;}
+    .marquee .marquee-content {font-size: 2.4rem;}
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+/* header top marquee e */
+/* inner-header s */
+.header {position: absolute; left: 0; top: 45px; z-index: 10; width: 100%;}
+.inner-header {display: flex; justify-content: space-between; align-items: center; padding: 5px 10px;}
+.logo a {display: block; width: 100px; height: 30px;}
+
+.menu-btn {position: relative; width: 45px; height: 45px; display: flex; flex-direction: column; gap: 5px; align-items: center; justify-content: center;}
+.menu-btn:before, .menu-btn:after {content: ''; position: relative; width: 30px; height: 3px; border-radius: 30px; background: var(--yellow); transition: 0.2s;}
+.menu-btn.off:before {left: 1px; top: 4px; transform: rotate(45deg);}
+.menu-btn.off:after {left: 1px; top: -4px;  transform: rotate(-45deg);}
+
+.gnb-wrap {position: fixed; width: 100%; height: 100vh; left: 0; top: 0; opacity: 0; display: flex; align-items: center; width: 100%; height: 100%; background-color: var(--green); transition: all 0.5s; transform: translateY(-100%);}
+.gnb-wrap.open {opacity: 1; transform: translateY(0);}
+.gnb {display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 10px; width: 100%; height: 100%;}
+.gnb>li>a {display: block; width: 100%; color: var(--yellow); font-size: min(20vw, 75px); font-family: var(--thunder); line-height: 0.75; letter-spacing: 1px; transition: color 0.3s ease-in-out;}
+.gnb>li>a:hover {color: var(--pink);}
+@media screen and (min-width: 360px) {
+  .gnb>li>a {font-size: clamp(75px, 166px, 10vw);}
+}
+@media screen and (min-width: 768px) {
+  .inner-header {padding: 15px;}
+  .logo a {width: 130px;}
+  .menu-btn:before, .menu-btn:after {width: 37px; height: 4px;}
+}
+@media screen and (min-width: 1024px) {
+  .header {top: 55px;}
+  .inner-header {padding: 15px 30px;}
+}
+/* inner-header e */
+/** header e **/
+/** footer s **/
+.footer {display: flex; flex-direction: column; justify-content: space-between; align-items: center; width: 100%; height: var(--footer-height); background: var(--pink); color: var(--green); position: fixed; left: 0; bottom: 0; padding: 80px 10px;}
+.footer-top .sub-txt {text-align: center;}
+.footer-top .sub-txt em {display: block; font-size: 24px; padding-bottom: 20px;}
+.footer-top .noti {font-family: var(--thunder); font-size: 32vw; line-height: 1; text-align: center;}
+.footer-btm {text-align: center;}
+.footer-btm .logo {mix-blend-mode: overlay; width: 200px; margin: 0 auto; padding-top: 20px;}
+@media screen and (min-width: 768px) {
+  .footer-top .noti {font-size: 245px;}
+}
+@media screen and (min-width: 1024px) {
+  .footer {flex-direction: row; align-items: flex-end; padding: 80px 60px;}
+  .footer-top {width: calc(60% - 60px); align-self: center;}
+  .footer-top .noti {font-size: 11vw;}
+  .footer-btm {width: calc(40% - 60px); position: relative;}
+  .footer-btm::before {content: '';position: absolute; width: 50%; height: 272px; display: block; background: url('../img/common/img-bear-thinking.png') center no-repeat; background-size: contain; top: -324px; left: 50%; transform: translateX(-50%);}
+}
+/** footer e **/

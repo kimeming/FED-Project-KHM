@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* main settings s */
+main {position: relative; z-index: 1; overflow: hidden;}
+.section {width: 100%;}
+/* main settings e */
+/* section - visual s */
+.section.visual {position: relative;}
+.video-wrap {position: relative; height: 85vh;}
+.video-wrap video {position: absolute; left: 0; top: 0; width: 100%; max-width: 100%; height: 100%; object-fit: cover; object-position: bottom;}
+.video-wrap video.web {display: none;}
+.visual-tit {position: absolute; left: 50%; top: 35%; transform: translate(-50%, -50%); width: 100%; word-break: keep-all; padding: 2vw; font-family: var(--balgin); font-size: min(13vw, 70px); color: var(--green); text-transform: uppercase; line-height: 1;}
+.visual-tit .mask-txt {overflow: hidden;}
+.visual-tit .mask-txt p {transform: translateY(100%); animation: slideUp 0.8s 0.5s ease-out forwards;}
+.visual-tit .webs {display: none;}
+
+@media screen and (min-width: 768px) {
+    .visual-tit {top: 30%;}
+    .visual-tit .webs {display: block;}
+}
+
+@media screen and (min-width: 1024px) {
+    .video-wrap {height: 95vh;}
+    .video-wrap video.mob {display: none;}
+    .video-wrap video.web {display: block;}
+    .visual-tit {width: 50%; transform: translate(-100%, -20%);}
+    .visual-tit .mask-txt .webs {animation-delay: 0.3s;}
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(101%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+/* section - visual e */
+/* section - intro s */
+.section.intro {padding: 100px 10px 10px; background-color: var(--pink); color: var(--green); text-align: center;}
+.intro-tit {font-family: var(--balgin); font-size: 3rem; margin-bottom: min(10vw, 60px); line-height: 0.9;}
+.section.intro .grid-box-wrap {width: 95%; margin: auto; gap: 60px;}
+.grid-box-wrap {display: grid; grid-template-columns: repeat(1, 1fr);}
+.grid-box h3 {font-weight: bold; font-size: 1.2rem;}
+.section.intro .bear {position: relative; display: flex; justify-content: center; margin-top: 60px;}
+.section.intro .bear img {width: 40%; max-width: 200px;}
+.intro .link-btn-wrap {--link-btn-bd: #006450; --link-btn-txt: #006450; padding-top: 45px;}
+.intro .link-btn:hover, .intro .link-btn:focus {--link-btn-bg: #006450; --link-btn-txt: #fff;}
+@media screen and (min-width: 1024px) {
+    .grid-box-wrap {grid-template-columns: repeat(3, 1fr);}
+    .intro-tit {font-size: 5rem; margin-bottom: 100px;}
+    .section.intro .grid-box {display: flex; flex-direction: column; justify-content: space-between; gap: 20px;}
+    .section.intro .grid-box h3 {font-size: 1.5rem;}
+    .section.intro .grid-box p {font-size: 1.2rem;}
+}
+/* section - intro e */
+/* section - jelly s */
+.section.jelly {position: relative;}
+.section-bg {position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: var(--darkpink);}
+.horizontal-container {display: flex; flex-wrap: nowrap; overflow: hidden; height: 100vh; overflow: visible;}
+.module {height: 100vh; width: 100vw; display: flex; overflow: hidden;}
+.module-inner {position: relative; width: 100%;}
+.module.type1 img {transform-origin: -50% 80%;}
+.bg-box {position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(-50%, -50%);}
+.bg-text {font-family: var(--thunder); text-transform: uppercase; color: var(--yellow); font-size: 29vw; width: 100%; text-align: center; margin: 0; line-height: 0.75;  position: relative; top: 60px;}
+.content-box {position: relative; display: flex; justify-content: center; align-items: center; height: 100%; z-index: 2;}
+.jellies {max-width: 200px;}
+
+@media screen and (min-width: 768px) {
+    .jellies {max-width: 250px;}
+}
+@media screen and (min-width: 1024px) {
+    .jellies {max-width: 350px;}
+}
+@media screen and (min-width: 1200px) {
+    .jellies {max-width: 500px;}
+}
+/* section - jelly e */
+/* section - review s */
+.review {background-color: var(--point-color); padding: 100px 10px;}
+.review .grid-box-wrap {gap: 50px;}
+.review-box {display: flex; flex-direction: column; align-items: center; gap: 25px; width: 90%; height: 100%; margin: 0 auto; padding: 25px 40px; border-radius: 20px; text-align: center; background-color: #fff;  color: var(--green);}
+.review .grid-box {position: relative; z-index: 1;}
+.star-img {display: block; width: 250px; margin-top: 25px;}
+.review-box h3 {font-family: var(--balgin); font-size: 2rem; line-height: 1.2;}
+@media screen and (min-width: 1024px) {
+    .review {padding: 200px 20px;}
+    .review-box {padding: 75px 40px;}
+    .review-box {width: 100%;}
+    .review .grid-box::after {content: ''; position: absolute; left: 0; top: 0; z-index: -1; width: 100%; height: 100%; border-radius: 20px; background-color: #1c4d43; transition: .3s;}
+    .review .grid-box:hover::after {left: 10px; top: 10px;}
+}
+/* section - review e */
+/* section - recipe s */
+.recipe-list>li {min-height: 300px; background: url('../img/main/img-recipe1.png') center/ cover no-repeat;}
+.recipe-list>li.recipe1 {background-image: url('../img/main/img-recipe1.png');}
+.recipe-list>li.recipe2 {background-image: url('../img/main/img-recipe2.png');}
+.recipe-list>li.recipe3 {background-image: url('../img/main/img-recipe3.jpg');}
+.recipe-list a {position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;}
+.recipe-list a::after {content: ''; position: absolute; left: 0; top: 0; display: block; transition: 0.5s; width: 100%; height: 100%; background: linear-gradient(45deg, black, transparent); opacity: 0.5;}
+.recipe-list h3 {position: absolute; z-index: 1; width: 100%; text-align: center; font-family: var(--balgin); color: var(--yellow); line-height: 1;; font-size: max(30px, 3.2vw); word-break: keep-all; transition: 0.3s;}
+.recipe-list a:hover h3, .recipe-list a:focus h3 {color: var(--sub-color);}
+.recipe-list a:hover::after, .recipe-list a:focus::after {background: #000;}
+
+.recipe-info {display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 40px; padding: 100px 10px; background: var(--point-color); color: var(--yellow); text-align: center;}
+.recipe-info p {font-size: 27.5px; font-family: var(--balgin); text-transform: uppercase;}
+@media screen and (min-width: 1024px) {
+    .recipe-info p {font-size: 3em;}
+    .recipe-info span {font-size: 1.2rem;}
+}
+@media screen and (min-width: 1200px) {
+    .recipe-list>li {min-height: 450px;}
+}
+/* section - recipe e */

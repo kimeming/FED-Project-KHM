@@ -61,4 +61,41 @@ $(document).ready(function () {
     gsap.set('.module.type2 .content-box img', {rotate: -300});
     gsap.set('.module.type3 .content-box img', {rotate: 300});
 
+    // fadeUp animation
+    //fade ef
+    function fadeUp(){
+      $window = $(window);
+      var delayPosition = 50,
+          windowheight;
+
+      $window.on('resize', function() {
+          insertTargetPosition();
+      });
+
+      $window.on('scroll', function() {
+          var position = $window.scrollTop() + windowheight - delayPosition;
+
+          $('.fade-wrap.fade-up .fade-box').each(function() {
+              if(!$(this).hasClass('fadeUp') && $(this).data('offsetTop') < position) {
+                  $(this).addClass('fadeUp');
+              } else if($(this).hasClass('fadeUp') && $(this).data('offsetTop') > position){
+                  $(this).removeClass('fadeUp');
+              }
+          });
+
+      });
+
+      function insertTargetPosition() {
+          windowheight = $window.height();
+          $('.fade-wrap.fade-up .fade-box').each(function() {
+              $(this).data('offsetTop', ($(this).offset().top));
+          });
+      }
+
+      (function init() {
+          insertTargetPosition();
+      })();
+  }
+  fadeUp();
+
 });

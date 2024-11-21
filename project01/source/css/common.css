@@ -73,3 +73,8 @@ body.on {overflow: hidden;}
   body {font-size: 18px;}
 }
 /* common css e */
+
+/* fade up effect */
+.fade-wrap.fade-up  {overflow: hidden;}
+.fade-wrap.fade-up .fade-box.fadeUp {opacity: 1; transform: translateY(0);}
+.fade-wrap.fade-up .fade-box {opacity: 0; transform: translateY(100%); transition: all 1s;}

@@ -63,8 +63,10 @@ main {position: relative; z-index: 1; overflow: hidden;}
 .bg-box {position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(-50%, -50%);}
 .bg-text {font-family: var(--thunder); text-transform: uppercase; color: var(--yellow); font-size: 29vw; width: 100%; text-align: center; margin: 0; line-height: 0.75;  position: relative; top: 60px;}
 .content-box {position: relative; display: flex; justify-content: center; align-items: center; height: 100%; z-index: 2;}
-.jellies {max-width: 200px;}
-
+.jellies {width: 100%; max-width: 150px;}
+@media screen and (min-width: 500px) {
+    .jellies {max-width: 200px;}
+}
 @media screen and (min-width: 768px) {
     .jellies {max-width: 250px;}
 }

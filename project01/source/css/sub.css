@@ -68,3 +68,8 @@
 /* text-list s */
 .list-tit {font-size: 1.3rem; font-weight: bold; margin-bottom: 1.3rem;}
 /* text-list e */
+
+/* test - popup */
+.popup-wrap {display: none; position: fixed; width: 100vw; height: 100vh; left: 0; top: 0; z-index: 30; overflow: hidden; background: rgba(0,0,0,0.5);}
+.popup-wrap.on {display: block;}
+.popup-inner {width: 90vw; position: relative; left: 50%; top: 50%; translate: -50% -50%; padding: clamp(3vw, 30px, 7%); background-color: var(--green); color: var(--yellow);}

@@ -13,9 +13,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script src="/project01/source/js/layout.js"></script>
+    <script src="/project01/source/js/sub.js"></script>
 </head>
 <body>
     <div class="wrapper">
+        <div class="dimm"></div>
         <div class="header-wrap">
             <div class="marquee">
                 <div class="track">
@@ -68,7 +70,7 @@
                     <h2 class="sub-title">RECIPES</h2>
                 </div>
                 <div class="sub-section">
-                    <ul class="grid-list">
+                    <ul class="grid-list recipe-grid">
                         <li class="item wide">
                             <div class="icon">
                                 <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.54 72.1"><defs><style>.cls-1{fill:#fcdc3e;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="57.05 64.49 39.18 58.93 25.88 72.1 19.08 54.66 0.49 52.48 9.88 36.29 0 20.39 18.51 17.64 24.78 0 38.48 12.76 56.18 6.67 54.74 25.33 70.54 35.36 55.05 45.88 57.05 64.49"></polygon></g></g></svg>
@@ -160,14 +162,29 @@
                     </ul>
                 </div>
             </div>
-            <div class="popup-wrap">
-                <div class="popup-inner">
+            <div class="popup-wrap">  
+                <div class="popup">
+                    <button type="button" class="close-btn"></button>
                     <h3 class="title">HERE COMES RECIPE NAME</h3>
-                    <div class="img-box">
-                        <img src="/project01/source/img/sub/img-recipe01.jpg" alt="test">
-                    </div>
-                    <div class="text-box">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eum nesciunt dolores magni, temporibus ducimus qui, eveniet distinctio omnis at suscipit a officia? Vel ipsa officiis, quaerat similique excepturi repudiandae.</p>
+                    <div class="inner">
+                        
+                        <div class="img-area">
+                            <img src="/project01/source/img/sub/img-recipe01.jpg" alt="test">
+                        </div>
+                        <div class="text-area">
+                            <div class="text-box">
+                                <em class="box-tit">INGREDIENTS</em>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, aspernatur sapiente. Itaque, non voluptates animi mollitia aperiam error ipsam modi. Eum illum et officiis laudantium nostrum cum possimus dolorum temporibus!</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, aspernatur sapiente. Itaque, non voluptates animi mollitia aperiam error ipsam modi. Eum illum et officiis laudantium nostrum cum possimus dolorum temporibus!</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, aspernatur sapiente. Itaque, non voluptates animi mollitia aperiam error ipsam modi. Eum illum et officiis laudantium nostrum cum possimus dolorum temporibus!</p>
+                            </div>
+                            <div class="text-box">
+                                <em class="box-tit">RECIPE</em>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet saepe eligendi beatae repellat doloremque iusto ex voluptates molestias, id magnam odit voluptate nesciunt sunt assumenda animi consectetur laudantium error adipisci.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet saepe eligendi beatae repellat doloremque iusto ex voluptates molestias, id magnam odit voluptate nesciunt sunt assumenda animi consectetur laudantium error adipisci.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet saepe eligendi beatae repellat doloremque iusto ex voluptates molestias, id magnam odit voluptate nesciunt sunt assumenda animi consectetur laudantium error adipisci.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

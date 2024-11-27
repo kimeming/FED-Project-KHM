@@ -53,6 +53,8 @@ iframe {overflow: hidden; margin: 0; padding: 0; border: 0;}
 /* reset css e */
 /* common css s */
 body.on {overflow: hidden;}
+.dimm {position: fixed;  left: 0;  top: 0;  bottom: 0;  opacity: 0;  width: 100%;  height: 0;  background: rgba(17, 17, 17, 0.8); transition: all 0.3s;}
+.dimm.on {  opacity: 1;  height: auto;  z-index: 30;}
 .blind {position: absolute; overflow: hidden; width: 1px; height: 1px; clip: rect(0,0,0,0); margin: -1px;}
 .skip {width: 100%; height: 0; top: 0; left: 0;}
 .skip a {display: block; overflow: hidden; position: absolute; top: 0; text-indent: -9999px;}
@@ -66,6 +68,29 @@ body.on {overflow: hidden;}
 .link-btn:hover, .link-btn:focus {--link-btn-bg: #FCDC3E; --link-btn-txt: #006450;}
 .bold {font-weight: bold;}
 ::selection {background-color: var(--darkpink);}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px; }
+
+::-webkit-scrollbar-thumb {
+  background: var(--darkpink);
+  border-radius: 10px; }
+
+::-webkit-scrollbar-track {
+  background-color: transparent; }
+
+::-webkit-scrollbar:horizontal {
+  height: 5px; }
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: var(--darkpink);
+  border-radius: 10px; }
+
+::-webkit-scrollbar-track:horizontal {
+  background-color: transparent; }
+
+
 @media screen and (min-width: 1024px) {
   body {font-size: 16px;}
 }

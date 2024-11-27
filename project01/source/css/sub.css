@@ -70,6 +70,25 @@
 /* text-list e */
 
 /* test - popup */
-.popup-wrap {display: none; position: fixed; width: 100vw; height: 100vh; left: 0; top: 0; z-index: 30; overflow: hidden; background: rgba(0,0,0,0.5);}
+.popup-wrap {display: none; position: fixed; width: 100vw; height: 100vh; left: 0; top: 0; z-index: 30; overflow: hidden;}
 .popup-wrap.on {display: block;}
-.popup-inner {width: 90vw; position: relative; left: 50%; top: 50%; translate: -50% -50%; padding: clamp(3vw, 30px, 7%); background-color: var(--green); color: var(--yellow);}
+.popup {width: 90vw; position: relative; left: 50%; top: 50%; translate: -50% -50%; padding: clamp(3vw, 30px, 7%); background-color: var(--green); color: var(--yellow);}
+.popup .close-btn {width: 30px; height: 30px; position: relative; left: calc(100% - 30px); top: 0;}
+.popup .close-btn::before, .popup-wrap .close-btn::after {content: ''; position: absolute; left: 0; top: 15px; width: 30px; height: 4px; border-radius: 4px; background: var(--yellow);}
+.popup .close-btn::before {transform: rotate(45deg);}
+.popup .close-btn::after {transform: rotate(-45deg);}
+.popup .inner {display: flex; flex-direction: column; gap: 15px;}
+
+.popup .title {font-size: max(24px, 3vw); font-family: var(--balgin); line-height: 1; margin-bottom: 30px;}
+.popup .box-tit {font-weight: bold; font-size: 1.3rem;}
+.popup .img-area {display: flex; justify-content: center;}
+.popup .text-area {overflow-y: auto; max-height: 220px;}
+.popup .text-box + .text-box {padding-top: 30px;}
+
+.popup ::-webkit-scrollbar-thumb {background: var(--yellow);}
+.popup ::-webkit-scrollbar-thumb:horizontal {background: var(--yellow);}
+
+@media screen and (min-width: 1024px) {
+    .popup .inner {flex-direction: row;}
+    .popup .text-area {flex: 1; max-height: 392px;}
+}

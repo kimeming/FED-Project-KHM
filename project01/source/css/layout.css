@@ -45,6 +45,7 @@
   .inner-header {padding: 15px;}
   .logo a {width: 130px;}
   .menu-btn:before, .menu-btn:after {width: 37px; height: 4px;}
+  .menu-btn.off:after {top: -5px;}
 }
 @media screen and (min-width: 1024px) {
   .header {top: 55px;}

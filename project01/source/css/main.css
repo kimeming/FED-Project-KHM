@@ -89,7 +89,7 @@ main {position: relative; z-index: 1; overflow: hidden;}
     .review-box {padding: 75px 40px;}
     .review-box {width: 100%;}
     .review .grid-box::after {content: ''; position: absolute; left: 0; top: 0; z-index: -1; width: 100%; height: 100%; border-radius: 20px; background-color: #1c4d43; transition: .3s;}
-    .review .grid-box:hover::after {left: 10px; top: 10px;}
+    .review .grid-box:hover::after {left: 20px; top: 20px;}
 }
 /* section - review e */
 /* section - recipe s */

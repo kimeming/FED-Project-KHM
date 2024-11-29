@@ -14,7 +14,13 @@ $(document).ready(function () {
     let Name = recipeArr[curRecipe][0].name,
         Src = recipeArr[curRecipe][0].src,
         Ingredient = recipeArr[curRecipe][0].ingredient,
-        Recipe = recipeArr[curRecipe][0].Recipe;
+        Recipe = recipeArr[curRecipe][0].recipe;
+
+    $popupWrap.find('.title').text(Name);
+    $popupWrap.find('img').attr("src", `/project01/source/img/sub/${Src}`);
+    $popupWrap.find('img').attr("alt", Name);
+    $popupWrap.find('.ingredient').text(Ingredient);
+    $popupWrap.find('.recipe').text(Recipe);
 
   });
 

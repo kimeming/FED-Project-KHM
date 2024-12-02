@@ -22,21 +22,27 @@ $(document).ready(function () {
       // map(v=>가공된v값)
       // =>변수에 할당시 새로운 배열값으로 같은 배열주소에 재할당함
       // -> 원본배열은 보존한다!
-      // let temp = Ingredient.map(v=>`<div>${v}</div>`);
+      let splitIng = Ingredient.map(v=>`<span>${v}</span>`);
       // console.log(temp);
 
-      let temp = [];
+      // forEach 사용하는 방법
+      // let temp = [];
 
-      Ingredient.forEach((v,i)=>{
-        temp[i] = `<aside>${v}</aside>`;
-      }); ///// forEach ////
+      // Ingredient.forEach((v,i)=>{
+      //   temp[i] = `<aside>${v}</aside>`;
+      // }); ///// forEach ////
+
+      // recipe 가공
+      Recipe = Recipe.split(" | ");
+
+      let splitRecipe = Recipe.map(v => `<p>${v}</p>`);
 
 
     $popupWrap.find(".title").text(Name);
     $popupWrap.find("img").attr("src", `/project01/source/img/sub/${Src}`);
     $popupWrap.find("img").attr("alt", Name);
-    $popupWrap.find(".ingredient").html(temp);
-    $popupWrap.find(".recipe").text(Recipe);
+    $popupWrap.find(".ingredient").html(splitIng);
+    $popupWrap.find(".recipe").html(splitRecipe);
   });
 
   $popupCloseBtn.on("click", function () {
@@ -53,11 +59,11 @@ $(document).ready(function () {
         name: "Banana Bear",
         src: "img-recipe01.jpg",
         ingredient: `75 g butter, soft | 90 g powdered sugar and a little more for dusting | 1 egg | 2 bananas, ripe 80 g flour | z tsp baking powder | ¼ tsp cinnamon 1 banana | 20 g butter | 1 tbsp sugar 100 g HARIBO Goldbears /75 ml cream 2 Goldbear baking molds`,
-        recipe: `1. Preheat the oven to 180 *C al top and boltom heat,
-        2. Mash the two ripe bananas in a bowl with a fork, In another bowl, beat the butter with the powdered sugar until creamy.
-        Then stir in the egg, the mashed bananas, the flour, the baking powder and the cinnamon.
-        3. Divide the batter evenly between the two Goldbear molds and put them in the oven for 30 minules. Allow the bears to cool completely before removing them from the mold. Take them out of the moid and dust with a little powdered sugar.
-        Now It's time for the decoration: peel the last banana and cut it in half lengthwise. Put the butter with the sugar into a pan and let it melt over medium heat. Put the banana halves into the pan and caramelize them for about 5 minutes. In the meantime you can whip the cream until stiff.
+        recipe: `1. Preheat the oven to 180 *C al top and boltom heat, | 
+        2. Mash the two ripe bananas in a bowl with a fork, In another bowl, beat the butter with the powdered sugar until creamy. | 
+        Then stir in the egg, the mashed bananas, the flour, the baking powder and the cinnamon. | 
+        3. Divide the batter evenly between the two Goldbear molds and put them in the oven for 30 minules. Allow the bears to cool completely before removing them from the mold. Take them out of the moid and dust with a little powdered sugar. | 
+        4. Now It's time for the decoration: peel the last banana and cut it in half lengthwise. Put the butter with the sugar into a pan and let it melt over medium heat. Put the banana halves into the pan and caramelize them for about 5 minutes. In the meantime you can whip the cream until stiff. | 
         5. Decorate the bears with the banana halves, the whipped cream and the Goldbears: Have fun with your banana bears!`,
       },
     ],

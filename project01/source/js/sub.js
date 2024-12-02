@@ -16,10 +16,26 @@ $(document).ready(function () {
       Ingredient = recipeArr[curRecipe][0].ingredient,
       Recipe = recipeArr[curRecipe][0].recipe;
 
+      // Ingredient 가공
+      Ingredient = Ingredient.split(" | ");
+
+      // map(v=>가공된v값)
+      // =>변수에 할당시 새로운 배열값으로 같은 배열주소에 재할당함
+      // -> 원본배열은 보존한다!
+      // let temp = Ingredient.map(v=>`<div>${v}</div>`);
+      // console.log(temp);
+
+      let temp = [];
+
+      Ingredient.forEach((v,i)=>{
+        temp[i] = `<aside>${v}</aside>`;
+      }); ///// forEach ////
+
+
     $popupWrap.find(".title").text(Name);
     $popupWrap.find("img").attr("src", `/project01/source/img/sub/${Src}`);
     $popupWrap.find("img").attr("alt", Name);
-    $popupWrap.find(".ingredient").text(Ingredient);
+    $popupWrap.find(".ingredient").html(temp);
     $popupWrap.find(".recipe").text(Recipe);
   });
 
@@ -30,7 +46,8 @@ $(document).ready(function () {
   });
 
   // 레시피 내용 변경
-  const recipeArr = {
+  const recipeArr = 
+  {
     bananaBear: [
       {
         name: "Banana Bear",

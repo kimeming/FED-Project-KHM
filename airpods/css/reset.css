@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* reset css s */
+* {margin :0; padding: 0; font: inherit; color: inherit;}
+*, :after, :before {box-sizing: border-box; flex-shrink: 0;}
+:root {-webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; cursor: default; line-height: 1.4; overflow-wrap: break-word; word-break: break-word; tab-size: 4}
+html, body {height: 100%;}
+img, picture, video, canvas, svg {display: block; max-width: 100%;}
+button {background: none; border: 0; cursor: pointer;}
+a {text-decoration: none}
+table {border-collapse: collapse; border-spacing: 0;}
+ul {list-style: none;}
+address, em {font-style: normal;}
+fieldset {border: 0;}
+iframe {overflow: hidden; margin: 0; padding: 0; border: 0;}
+body {min-width: 320px; font-size: 16px; font-weight: 400; font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif; word-break: keep-all; background-color: var(--bg-color); color: var(--front-color)}
+/* reset css e */

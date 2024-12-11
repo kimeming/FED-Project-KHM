@@ -48,7 +48,7 @@ $(document).ready(function () {
     let splitRecipe = Recipe.map((v) => `<p>${v}</p>`);
 
     $popupWrap.find(".title").text(Name);
-    $popupWrap.find("img").attr("src", `/project01/source/img/sub/${Src}`);
+    $popupWrap.find("img").attr("src", `./img/sub/${Src}`);
     $popupWrap.find("img").attr("alt", Name);
     $popupWrap.find(".ingredient").html(splitIng);
     $popupWrap.find(".recipe").html(splitRecipe);

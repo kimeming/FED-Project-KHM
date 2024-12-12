@@ -17,7 +17,8 @@
 .wrapper {min-width: 280px; width: 100%; height: 100%; overflow-x: hidden;}
 .blind {position: absolute; overflow: hidden; width: 1px; height: 1px; clip: rect(0,0,0,0); margin: -1px;}
 .blue-btn {background-color: var(--blue); color: var(--white); border-radius: 40px; padding: 3px 10px;}
-.link {display: inline-flex;}
-.link:hover {text-decoration: underline;}
+.link {display: inline-flex; gap: 4px;}
+.link:hover span {text-decoration: underline;}
 .link.blue {color: var(--link-blue);}
-.link.blue::after {content: '>'; display: inline-block; font-family: 'SF Pro Icons', sans-serif;}
+.link.blue::after {content: ""; display: inline-block; position: relative; line-height: 1.2; font-family: 'SF Pro Icons', sans-serif;}
+.link.blue::after {text-decoration: none;}

@@ -12,5 +12,5 @@ ul {list-style: none;}
 address, em {font-style: normal;}
 fieldset {border: 0;}
 iframe {overflow: hidden; margin: 0; padding: 0; border: 0;}
-body {min-width: 320px; font-size: 16px; font-weight: 400; font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif; word-break: keep-all; background-color: var(--bg-color); color: var(--front-color)}
+body {min-width: 320px; font-size: 16px; font-weight: 400; font-family: SF PRO KR, SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif; word-break: keep-all; background-color: var(--bg-color); color: var(--front-color)}
 /* reset css e */

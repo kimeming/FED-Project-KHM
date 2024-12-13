@@ -7,6 +7,11 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/layout.css"> <!-- layout.css -->
     <link rel="stylesheet" href="./css/main.css"> <!-- main.css -->
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/main.js"></script>
   </head>
   <body>
     <!-- wrapper s -->
@@ -107,6 +112,7 @@
       <!-- footer s -->
       <footer class="footer">
         <div class="inner">
+          <!-- section buy s -->
           <section class="section buy">
             <div class="buy-info">
               <div class="info-inner">
@@ -164,6 +170,8 @@
               </div>
             </div>
           </section>
+          <!-- section buy e -->
+          <!-- section noti s -->
           <section class="section noti">
             <p>
               * 신규 구독자에게만 적용됩니다. 무료 혜택 기간 종료 이후에는 월 8,900원의 요금이 청구됩니다. 새로 구입한 적용 대상 기기를 보유 중인 Apple Music 신규 구독자를 위한 기간 한정 혜택입니다. 적용 대상 오디오 기기에 본 프로모션의 혜택을 받으려면 최신 iOS 또는 iPadOS를 구동하는 Apple 기기에 오디오 기기를 연결 또는 페어링해야 합니다. Apple Watch에 본 프로모션의 혜택을 받으려면 최신 iOS를 구동하는 iPhone에 Apple Watch를 연결 또는 페어링해야 합니다. 무료 체험 혜택은 적용 대상 기기 활성화 이후 3개월 안에 신청할 수 있습니다. 구입한 적용 대상 기기 수에 상관없이, 무료 체험 혜택은 Apple ID당 한 번만 제공됩니다. 멤버십은 매월 자동으로 갱신되며, 해지 시 종료됩니다. 제한 사항 및 기타 약관이 적용됩니다.
@@ -195,6 +203,8 @@
               <li>ΔΔΔ ‘정밀 탐색’ 기능을 사용하려면 U1을 탑재한 iPhone이 필요합니다. 사용 가능 여부는 지역에 따라 다릅니다.</li>
             </ul>
           </section>
+          <!-- section noti e -->
+          <!-- breadcrumb s -->
           <nav class="breadcrumb">
             <ul>
               <li class="home"><a href="#"><span class="icon-home"></span></a></li>
@@ -202,74 +212,120 @@
               <li><a href="#">AirPods Pro 2</a></li>
             </ul>
           </nav>
+          <!-- breadcrumb e -->
+          <!-- fnb s -->
           <div class="fnb">
             <div class="fnb-column">
-              <div class="fnb-item">
-                <p class="fnb-title"></p>
+              <div class="fnb-item active">
+                <p class="fnb-title">쇼핑 및 알아보기</p>
                 <ul class="fnb-list">
-                  <li><a href="#"></a></li>
+                  <li><a href="#">스토어</a></li>
+                  <li><a href="#">Mac</a></li>
+                  <li><a href="#">iPad</a></li>
+                  <li><a href="#">iPhone</a></li>
+                  <li><a href="#">Watch</a></li>
+                  <li><a href="#">Vision</a></li>
+                  <li><a href="#">AirPods</a></li>
+                  <li><a href="#">TV 및 홈</a></li>
+                  <li><a href="#">AirTag</a></li>
+                  <li><a href="#">액세서리</a></li>
                 </ul>
               </div>
               <div class="fnb-item">
-                <p class="fnb-title"></p>
+                <p class="fnb-title">Apple 지갑</p>
                 <ul class="fnb-list">
-                  <li><a href="#"></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="fnb-column">
-              <div class="fnb-item">
-                <p class="fnb-title"></p>
-                <ul class="fnb-list">
-                  <li><a href="#"></a></li>
-                </ul>
-              </div>
-              <div class="fnb-item">
-                <p class="fnb-title"></p>
-                <ul class="fnb-list">
-                  <li><a href="#"></a></li>
+                  <li><a href="#">지갑</a></li>
+                  <li><a href="#">Apple Pay</a></li>
                 </ul>
               </div>
             </div>
             <div class="fnb-column">
               <div class="fnb-item">
-                <p class="fnb-title"></p>
+                <p class="fnb-title">계정</p>
                 <ul class="fnb-list">
-                  <li><a href="#"></a></li>
+                  <li><a href="#">Apple 계정 관리</a></li>
+                  <li><a href="#">Apple Store 계정</a></li>
+                  <li><a href="#">iCloud.com</a></li>
+                </ul>
+              </div>
+              <div class="fnb-item">
+                <p class="fnb-title">엔터테인먼트</p>
+                <ul class="fnb-list">
+                  <li><a href="#">Apple One</a></li>
+                  <li><a href="#">Apple TV+</a></li>
+                  <li><a href="#">Apple Music</a></li>
+                  <li><a href="#">Apple Arcade</a></li>
+                  <li><a href="#">Apple Podcasts</a></li>
+                  <li><a href="#">Apple Books</a></li>
+                  <li><a href="#">App Store</a></li>
                 </ul>
               </div>
             </div>
             <div class="fnb-column">
               <div class="fnb-item">
-                <p class="fnb-title"></p>
+                <p class="fnb-title">Apple Store</p>
                 <ul class="fnb-list">
-                  <li><a href="#"></a></li>
-                </ul>
-              </div>
-              <div class="fnb-item">
-                <p class="fnb-title"></p>
-                <ul class="fnb-list">
-                  <li><a href="#"></a></li>
+                  <li><a href="#">매장 찾기</a></li>
+                  <li><a href="#">Genius Bar</a></li>
+                  <li><a href="#">Today at Apple</a></li>
+                  <li><a href="#">그룹 예약</a></li>
+                  <li><a href="#">Apple 캠프</a></li>
+                  <li><a href="#">Apple Store 앱</a></li>
+                  <li><a href="#">인증 리퍼비쉬 제품</a></li>
+                  <li><a href="#">Apple Trade In</a></li>
+                  <li><a href="#">할부 방식</a></li>
+                  <li><a href="#">주문 상태</a></li>
+                  <li><a href="#">쇼핑 도움말</a></li>
                 </ul>
               </div>
             </div>
             <div class="fnb-column">
               <div class="fnb-item">
-                <p class="fnb-title"></p>
+                <p class="fnb-title">비즈니스</p>
                 <ul class="fnb-list">
-                  <li><a href="#"></a></li>
+                  <li><a href="#">Apple과 비즈니스</a></li>
+                  <li><a href="#">비즈니스를 위한 제품 쇼핑하기</a></li>
                 </ul>
               </div>
               <div class="fnb-item">
-                <p class="fnb-title"></p>
+                <p class="fnb-title">교육</p>
                 <ul class="fnb-list">
-                  <li><a href="#"></a></li>
+                  <li><a href="#">Apple과 교육</a></li>
+                  <li><a href="#">초중고용 제품 쇼핑하기</a></li>
+                  <li><a href="#">대학 생활을 위한 제품 쇼핑하기</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="fnb-column">
+              <div class="fnb-item">
+                <p class="fnb-title">Apple의 가치관</p>
+                <ul class="fnb-list">
+                  <li><a href="#">손쉬운 사용</a></li>
+                  <li><a href="#">교육</a></li>
+                  <li><a href="#">환경</a></li>
+                  <li><a href="#">개인정보 보호</a></li>
+                  <li><a href="#">공급망</a></li>
+                </ul>
+              </div>
+              <div class="fnb-item">
+                <p class="fnb-title">Apple 정보</p>
+                <ul class="fnb-list">
+                  <li><a href="#">Newsroom</a></li>
+                  <li><a href="#">Apple 리더십</a></li>
+                  <li><a href="#">채용 안내</a></li>
+                  <li><a href="#">윤리 및 규정 준수</a></li>
+                  <li><a href="#">이벤트</a></li>
+                  <li><a href="#">일자리 창출</a></li>
+                  <li><a href="#">Apple 연락처</a></li>
                 </ul>
               </div>
             </div>
           </div>
+          <!-- fnb e -->
+          <!-- footer-btm s -->
           <div class="footer-btm">
           </div>
+          <!-- footer-btm e -->
         </div>
       </footer>
       <!-- footer e -->

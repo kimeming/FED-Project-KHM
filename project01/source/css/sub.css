@@ -69,7 +69,7 @@
 .list-tit {font-size: 1.3rem; font-weight: bold; margin-bottom: 1.3rem;}
 /* text-list e */
 
-/* test - popup */
+/* popup s */
 .popup-wrap {display: none; position: fixed; width: 100vw; height: 100vh; left: 0; top: 0; z-index: 30; overflow: hidden;}
 .popup-wrap.on {display: block;}
 .popup {width: 90vw; height: 80vh; position: relative; left: 50%; top: 50%; translate: -50% -50%; padding: clamp(3vw, 30px, 7%); background-color: var(--green); color: var(--yellow);}
@@ -113,3 +113,4 @@
     .popup .img-area img {max-height: 500px;}
     .popup .text-box {padding-right: 20px;}
 }
+/* popup e */

@@ -9,7 +9,8 @@
     --bg-color: var(--black);
     --front-color: var(--white);
     --link-blue: rgb(0, 102, 204);
-    /* --title-opacity: 0.92;
+    --title-opacity: 0.92;
+    /* 
     --headline-color: #f5f5f7; */
 
 }
@@ -22,3 +23,4 @@
 .link.blue {color: var(--link-blue);}
 .link.blue::after {content: ""; display: inline-block; position: relative; line-height: 1.2; font-family: 'SF Pro Icons', sans-serif;}
 .link.blue::after {text-decoration: none;}
+.nowrap {white-space: nowrap;}

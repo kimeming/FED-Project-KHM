@@ -228,20 +228,26 @@
                     </div>
                 </div>
             </section>
+            <script>
+                function recipeMove(el) {
+                sessionStorage.saveData = el.dataset.name;
+                location.href = "recipe-list.html";
+            }
+            </script>
             <section class="section recipe">
                 <ul class="recipe-list grid-box-wrap">
                     <li class="recipe1 grid-box">
-                        <a href="#lnk">
+                        <a href="recipe-list.html" data-name="GingerBear">
                             <h3>Gingerbread Bear</h3>
                         </a>
                     </li>
                     <li class="recipe2 grid-box">
-                        <a href="#lnk">
+                        <a href="recipe-list.html" data-name="RCBear">
                             <h3>Raspberry Chocolate Bear</h3>
                         </a>
                     </li>
                     <li class="recipe3 grid-box">
-                        <a href="#lnk">
+                        <a href="recipe-list.html" data-name="bananaBear">
                             <h3>Banana Bears</h3>
                         </a>
                     </li>

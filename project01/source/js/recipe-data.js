@@ -122,3 +122,5 @@ const recipeArr = {
     },
   ],
 };
+
+export default recipeArr;

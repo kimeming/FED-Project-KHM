@@ -16,7 +16,7 @@
 /* recipe grid s */
 .grid-list {display: grid; grid-template-columns: repeat(1,1fr); color: var(--yellow);}
 .grid-list .item {position: relative; display: flex; flex-direction: column;}
-.grid-list .img-area>img {width: 100%;}
+.grid-list .img-area>img {width: 100%; object-fit: cover; aspect-ratio: 4 / 3;}
 .grid-list .text-area {padding: 50px 20px; height: 100%;}
 .grid-list .img-area, .grid-list .text-area {flex: 1; position: relative;}
 .grid-list .img-area::before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.4;}

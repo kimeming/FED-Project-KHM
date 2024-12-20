@@ -110,7 +110,7 @@ const recipeArr = {
       ingredient: `100 g raspberries | 20 g sugar | 1 sheet gelatine | 90 ml cream | 6 chocolate double biscuits | 25 g butter, melted | 1 Goldbear baking mold`,
       recipe: `
         1. Wash the raspberries and puree them with a hand blender.
-        Pass the puree through a sieve to remove the seeds. Soften the gelatine in a bowl of cold water for 5 minutes.
+        Pass the puree through a sieve to remove the seeds. Soften the gelatine in a bowl of cold water for 5 minutes. | 
         2. Boil the raspberry puree in a pan with the sugar and remove from the heat. Squeeze the gelatine well and stir it into the warm puree. Let the mixture cool to oom temperature. | 
         3. In the meantime, whip the cream until stiff. Then carefully fold it into the puree and fill the mixture into the Goldbear mold. | 
         Leave about 5 mm from the top of the edge. Put the mould in the freezer for 30 minutes. | 
@@ -120,6 +120,117 @@ const recipeArr = {
         Now you need a little patience - the bear should thaw completely before you taste it. But then it's time: On your spoons, get set, go!
         `,
     },
+  ],
+  wreath: [
+    {
+      name: "Hari Cake Christmas Wreath",
+      src: "img-recipe07.jpg",
+      ingredient: `1 pack of HARIBO Goldbears | 3 whole eggs 1/2 cup of butter | 1/2 cup of margarine 1 cup of sugar | 1 1/2 cups of all-purpose flour (without leavening) | 1/2 cup of cornstarch | 1 cup of cocoa powder | 1 tablespoon of baking powder`,
+      recipe: `
+      1. Mix ingredients | 
+      Beat the eggs for 2 minutes with an electric mixer.
+      Add the butter, margarine, and sifted sugar. Beat for another 2 minutes.
+      Add the sifted flour and cornstarch. Mix until smooth, then add the sifted cocoa powder.
+      Stir with a whisk and incorporate the baking powder. | 
+      2. Bake | 
+      Pour the batter into a greased tube pan.
+      Bake in a preheated oven at 180°C (350°F) for 35 minutes. | 
+      3. Decorate | 
+      Once cooled, remove the cake from the pan and decorate with HARIBO Goldbears.
+      Then, simply serve and enjoy with your family.`
+    }
+  ],
+  panettone: [
+    {
+      name: "Goldbear Panettone",
+      src: "img-recipe08.jpg",
+      ingredient: `
+            130 grams (1 American cup) sugar | 
+            50 grams (2 tablespoons) butter | 
+            3 eggs | 
+            250 milliliters (1 cup) warm milk | 
+            20 milliliters of panettone essence | 
+            50 grams of fresh yeast | 
+            1 kilogram of sifted wheat flour | 
+            300 grams candied fruit | 
+            250 grams of raisins | 
+            A pinch of salt | 
+            2 packs of HARIBO Goldbears for decoration | 
+            1/2 cup powdered sugar | 
+            1 teaspoon of milk
+            `,
+      recipe: `
+        1. mix & blend | 
+        Place the sugar, butter, eggs, milk, panettone essence and yeast in a mixer. Mix until all the ingredients are well combined.
+        Pour this mixture into a bowl with the wheat flour and knead well until the dough no longer sticks to your hands.
+        Add the raisins, candied fruit, a pinch of salt and the lemon zest and mix again until the fruit is evenly distributed throughout the dough. | 
+
+        2. rest & bake | 
+        Place the dough in the panettone molds, fill them halfway and leave to rest for about 40 minutes, or until the dough has doubled in size.
+        As soon as the dough has risen, make a cross-shaped cut in the top and brush with beaten egg yolk or butter.
+        Place the panettone molds on a baking tray and bake in a preheated oven at 180°C (350°F) for 40 minutes.
+        Remove from the oven and leave to cool at room temperature. | 
+
+        3. glazing & decorating | 
+        In a small bowl, mix 1/2 cup of powdered sugar with 1 teaspoon of milk. Adjust the consistency of the icing by adding more milk if necessary or more sugar if the mixture is too thin.
+        Spread the icing over the panettone and decorate with the HARIBO Gold Bears.
+      
+      `
+    }
+  ],
+  chamallows: [
+    {
+      name: "Chamallows Pave",
+      src: "img-recipe09.jpg",
+      ingredient: `
+        1 can of heavy cream | 
+        2 cans of sweetened condensed milk | 
+        2 tablespoons of cornstarch | 
+        Marie biscuits | 
+        Chocolate shavings (optional) | 
+        1 can of milk (the same measure as the can of heavy cream) | 
+        2 egg yolks | 
+        3 tablespoons of cocoa powder or chocolate drink mix | 
+        Milk for soaking the biscuits | 
+        Unsalted butter or margarine, just to adjust the consistency | 
+        2 packets of HARIBO Chamallows Barbecue or any other Chamallows
+      `,
+      recipe: `
+          1. Preparation | 
+          First, take the can of sweetened condensed milk, the egg yolks, the cornstarch, and the milk. Place them overheat and cook until it thickens into a cream, then set aside.
+          In a separate pot, combine the second can of sweetened condensed milk with a little margarine and the chocolate. Cook until it becomes a brigadeiro-style cream.
+          Turn off the heat and mix in the heavy cream. | 
+
+          2. Assembly | 
+          First, add the white cream.
+          Next, dip the biscuits in the milk and layer them on top of the white cream.
+          Then, add the chocolate cream and sprinkle chocolate shavings over it.
+          Freeze for 2 hours.
+          Before serving, finish the pavê with HARIBO Chamallows Barbecue to surprise your family and friends!
+      `
+    }
+  ],
+  giggly: [
+    {
+      name: "Giggly Jelly Goldbears",
+      src: "img-recipe09.jpg",
+      ingredient: `
+        1 can of sweetened condensed milk | 
+        2 boxes of heavy cream | 
+        ½ cup of water | 
+        18g of unflavored gelatin | 
+        2 packages of HARIBO Goldbears
+      `,
+      recipe: `
+        1. Mix | 
+        In a small bowl, combine the gelatin with the water. Mix and let it hydrate. Then, microwave for 15 seconds to melt. | 
+        2. Blend | 
+        In a blender, add the sweetened condensed milk, heavy cream, and the melted gelatin. Blend well until smooth and combined. | 
+        3. Refrigerate | 
+        Pour the Goldbears into silicone molds, cover with the gelatin mixture, and refrigerate for at least 12 hours until firm. | 
+        Once set, serve and brighten the day of your loved ones!
+      `
+    }
   ],
 };
 

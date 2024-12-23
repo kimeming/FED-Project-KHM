@@ -106,4 +106,37 @@ $(document).ready(function () {
       cursor.classList.remove("pointer");
     });
   });
+
+  // contact popup s
+  const $contactPopup = $(".contact-popup"),
+    $btnSubmit = $(".submit-btn"),
+    $btnClose = $(".close-btn");
+  
+  // 팝업 열기
+  $(".footer .noti").on("click keyup", function(){
+    $contactPopup.addClass("open");
+  });
+
+  // 팝업 닫기
+  $btnClose.on("click keyup", function(){
+    $contactPopup.removeClass("open");
+    $(".error").fadeOut();
+  });
+
+  // 폼 제출 형식 구현
+  $btnSubmit.on("click keyup", function(){
+    $("input, textarea").each(function(){
+      if($(this).val() == ""){
+        $(this).siblings(".error").fadeIn();
+      } else {
+        $(this).siblings(".error").fadeOut();
+        $contactPopup.addClass("complete")
+      }
+    });
+    
+    if($contactPopup.hasClass("complete")){
+      alert("Successfully Submitted!");
+      $contactPopup.removeClass("open");
+    }
+  });
 });

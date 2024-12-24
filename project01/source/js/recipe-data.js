@@ -213,7 +213,7 @@ const recipeArr = {
   giggly: [
     {
       name: "Giggly Jelly Goldbears",
-      src: "img-recipe09.jpg",
+      src: "img-recipe10.jpg",
       ingredient: `
         1 can of sweetened condensed milk | 
         2 boxes of heavy cream | 

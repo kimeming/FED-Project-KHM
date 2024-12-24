@@ -110,9 +110,3 @@
     .popup .text-box {padding-right: 20px;}
 }
 /* popup e */
-
-/* contact s */
-.sub-container.contact {display: flex; flex-direction: column;}
-.contact .sub-visual {width: 100%; height: 400px; background: url('../img/sub/img-recipe08.jpg') center no-repeat; background-size: cover;}
-.contact-form input, .contact-form textarea {border: 2px solid var(--yellow); border-radius: 5px; padding: 10px;}
-/* contact e */

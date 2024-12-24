@@ -119,10 +119,9 @@ body.on {overflow: hidden;}
 /* custom cursor e */
 
 /* input s */
-input {-webkit-appearance: none; background: none;  border: none;}
+input {appearance: none; background: none; border: none;}
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color: var(--green); font-size: 1rem;
- opacity: 0.4;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color: var(--green); font-size: 1rem; opacity: 0.4;}
 input:-ms-input-placeholder, textarea::-ms-input-placeholder {  color: #aaa;  font-size: 1rem; }
 input:-webkit-autofill {-webkit-box-shadow: 0 0 0 30px var(--yellow) inset;  -webkit-text-fill-color: #777; }
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {transition: background-color 5000s ease-in-out 0s; }

@@ -77,13 +77,13 @@
 .popup .close-btn::before, .popup-wrap .close-btn::after {content: ''; position: absolute; left: 0; top: 15px; width: 30px; height: 4px; border-radius: 4px; background: var(--yellow);}
 .popup .close-btn::before {transform: rotate(45deg);}
 .popup .close-btn::after {transform: rotate(-45deg);}
-.popup .inner {display: flex;flex-direction: column;gap: 50px;overflow-y: scroll;}
+.popup .inner {display: flex;flex-direction: column;gap: 50px; overflow-y: scroll;}
 
 .popup .title {font-size: max(30px, 6vw); font-family: var(--balgin); line-height: 1; margin-bottom: 50px;}
 .popup .box-tit {display: block; padding-bottom: 1rem; font-weight: bold; font-size: 1.5rem; font-family: var(--balgin);}
 .popup .img-area {display: flex; justify-content: center; flex: 1;}
 .popup .img-area img {object-fit: cover; width: 100%;}
-.popup .text-area {overflow-y: auto;}
+.popup .text-area {overflow-y: scroll;}
 .popup .text-box {padding-right: 10px;}
 .popup .text-box + .text-box {padding-top: 30px;}
 
@@ -107,4 +107,9 @@
     .popup .box-tit {padding-bottom: 1.4rem; font-size: 1.8rem;}
     .popup .text-box {padding-right: 20px;}
 }
+
+@supports (-webkit-touch-callout: none) {
+    .popup .inner {height: -webkit-fill-available;} 
+}
+
 /* popup e */

@@ -21,7 +21,8 @@ $(document).ready(function () {
     $dimm.removeClass("on");
   }
 
-  $recipeBtn.on("click", function () {
+  $recipeBtn.on("click", function (e) {
+    e.preventDefault;
     popShow();
     let curRecipe = $(this).data("recipe");
     let Name = recipeArr[curRecipe][0].name,

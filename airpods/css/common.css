@@ -24,3 +24,4 @@
 .link.blue::after {content: ""; display: inline-block; position: relative; line-height: 1.2; font-family: 'SF Pro Icons', sans-serif;}
 .link.blue::after {text-decoration: none;}
 .nowrap {white-space: nowrap;}
+.sticky {width: 100%; height: 100vh; position: sticky; top: 0;}

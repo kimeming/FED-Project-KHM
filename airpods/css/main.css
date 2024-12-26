@@ -1,3 +1,6 @@
 @charset "UTF-8";
-/* 임시 메인 height */
-.container {height: 100vh;}
+/* section intro */
+.section.intro {height: 250vh;}
+.section.intro .inner {display: flex; justify-content: center; align-items: center;}
+.animation-box img {display: none; width: 100%; height: 100%; object-fit: cover;}
+.animation-box img.on {display: block;}

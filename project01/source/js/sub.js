@@ -22,7 +22,7 @@ $(document).ready(function () {
   }
 
   $recipeBtn.on("click", function (e) {
-    e.preventDefault;
+    e.preventDefault();
     popShow();
     let curRecipe = $(this).data("recipe");
     let Name = recipeArr[curRecipe][0].name,

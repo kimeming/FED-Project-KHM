@@ -3,9 +3,7 @@ $(() => {
     let imgEl = ``;
     for (let i = 0; i < 64; i++) {
     const firstClass = i == 0 ? "on" : "";
-    imgEl += `<img class="${firstClass}" src="./img/main/${i
-        .toString()
-        .padStart(4, "0")}.png" alt>`;
+    imgEl += `<img class="${firstClass}" src="./img/main/${i.toString().padStart(4, "0")}.png" alt>`;
     }
 
     $(".animation-box").html(imgEl);
@@ -36,10 +34,10 @@ $(() => {
         scrub: 0,
         // markers: true,
         onEnter: function () {
-            $(".lng").addClass("active");
+            $(".nav").addClass("active");
         },
         onLeaveBack: function () {
-            $(".lng").removeClass("active");
+            $(".nav").removeClass("active");
         },
         },
     })
@@ -63,13 +61,13 @@ $(() => {
         imgLength = $(".animation-box img").length - 1;
         idx = Math.floor(self.progress * imgLength);
 
-        $(".sequence-area img")
+        $(".animation-box img")
             .eq(idx)
             .addClass("on")
             .siblings()
             .removeClass("on");
 
-        idx == 63 ? $(".sequence-area img").removeClass("on") : '';
+        idx == 63 ? $(".animation-box img").removeClass("on") : '';
         },
 
         }
